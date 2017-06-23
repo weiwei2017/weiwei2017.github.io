@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	<script src="js/index.js"></script>
+    <script src='js/delaunay.js'></script> 
+	<script src='js/TweenMax.js'></script> 
+</head>
+<body>
+	<div class="head">
+		<div class="top">
+			<div class="topb">
+				<ul class="topl">
+					<li>
+						<div class="bg1"></div>
+						<p>海量真实客片</p>
+					</li>
+					<li>
+						<div class="bg2"></div>
+						<p>不满意任性退</p>
+					</li>
+				</ul>
+				<ul class="topr">
+					<li><a href="http://www.napai.cn/Thirdpart/login/qzone?redirectURL=aHR0cCUzQSUyRiUyRnNoZW56aGVuLm5hcGFpLmNuJTJG" class="top_bg">QQ登录</a></li>
+					<li><a href="http://www.napai.cn/Thirdpart/login/weixin?redirectURL=aHR0cCUzQSUyRiUyRnNoZW56aGVuLm5hcGFpLmNuJTJG" class="top_bg border">微信登录</a></li>
+					<li><a href="login.html" class="border">登录</a></li>
+					<li><a href="register.html" class="border">注册</a></li>
+					<li><a href="order.html">我的订单</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="navb">
+			<div class="navm">
+				<div class=logo><a href="#"></a></div>
+				<div class="nav">
+					<ul>
+						<li class="active"><a href="main.html" class="current">首页</a></li>
+						<li><a href="selection.html">婚纱摄影</a></li>
+						<li><a href="selection.html">旅拍</a></li>
+						<li><a href="selection.html">儿童摄影</a></li>
+						<li><a href="selection.html">艺术写真</a></li>
+						<li><a href="selection.html">孕妇摄影</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="container"></div>
+	<div class="flip1">
+		<div class="quick1">
+			<p class="q_head"></p>
+			<p class="q_choose choose1">
+				定制拍摄
+				<span></span>
+			</p>
+			<p class="q_choose choose2">
+				加急拍摄
+				<span></span>
+			</p>
+			<p class="close"></p>
+		</div>
+		<div class="quick2">
+			<p class="q_head">
+				<span class="quick_home"></span>
+			</p>
+			<div class="flip_ms">
+				<textarea class="text_p" id="need" name="need"></textarea>	
+				<p class="place">输入您的需求</p>
+				<p class="warn">输入您的需求</p>
+				<a href="#" class="text_a">下一步</a>
+				<p class="speed"></p>
+			</div>
+		</div>
+		<div class="quick4">
+	        <p class="q_head">
+	         	<span class="quick_home"></span>
+	        </p>
+	        <ul class="budget">
+	            <li>3000以下</li>
+	            <li>3000-5000</li>
+	            <li>5000-7000</li>
+	            <li>7000-10000</li>
+	            <li>10000-20000</li>
+	            <li>20000以上</li>
+	        </ul>
+	        <div class="line2">
+             	<p class="l2"></p>
+         	</div>
+    	</div>
+    	<div class="quick5">
+	        <p class="q_head">
+	        	<span class="quick_home"></span>
+	        </p>
+	        <input type="text" placeholder="在此输入手机号" class="inp">
+	        <p class="warm">提交</p>
+	        <p class="notice">手机号只用于哪拍提供咨询<br>我们保证不会泄露您的个人信息</p>
+	        <div class="l3"></div>
+	    </div>
+	    <div class="quick6">
+	        <p class="q_head"></p>
+	        <p class="sub">提交成功</p>
+	        <p class="notice">哪拍将尽快与您联系<br>请您保持开机哦!</p>
+	        <div class="btn"><a href="#" class="fh_index">返回首页</a></div>
+	    </div>
+	</div>
+	<div class="RM">
+		<h2 class="RM_h2"></h2>
+		<div class="RM_main">
+			<ul></ul>
+			<p class="left_tm"></p>
+			<p class="right_tm"></p>
+			<span class="left"></span>
+			<span class="right"></span>
+			<ol></ol>
+		</div>
+	</div>
+	<div class="sz">
+		<h2 class="sz_h2"></h2>
+		<a href="http://shenzhen.napai.cn/sheying/ertong" target="_blank"><p class="sz_p">102款深圳精装儿童摄影服务</p></a>
+		<div class="sz_main">
+			<div class="sz_main_left">
+				<ul>
+					<li>
+						<a href="#" class="li01" target="_blank">
+							<img src="img/04.jpeg" title="妞妞的写真晒片-深圳市小木马儿童摄影-深圳儿童摄影" alt="深圳儿童摄影-妞妞的新发现的晒片">
+							<span class="li01_tm">
+								<p class="text_1">妞妞的新发现：</p>
+								<p class="text_2">“ 拍的时候孩子有一段时间可能是累了，状态不太好，摄影师果断让休息，陪着玩了好久才又继续拍的，前几天取了照片，看到排版效果还不错，有个别照片拍的真是大爱，再加上店内的场景相比较同规模的摄影工作室而言，真心算还可以的了，性价比绝对高。宝宝大点儿应该还会去拍。呵呵，推荐哦！”</p>
+								<span class="text_3"></span>
+							</span>
+						</a>
+						<a href="#" class="li02" target="_blank">
+							<img src="img/05.jpeg" title="逗趣宝贝的照片-深圳市小木马儿童摄影-深圳儿童摄影" alt="深圳儿童摄影-进入童袜的晒片">	
+							<span class="li02_tm">
+								<p class="text_1">进入童袜：</p>
+								<p class="text_2">“ 是亲戚推荐的，本来想去店里看下在定的，由于工作的原因，在哪拍网看到有详细的样片，客片以及价格，里面的东西也很多，就订了。工作人员就很热情，而且店里的环境非常的好。化妆师摄影师都很仔细，摄影师很幽默，不一会就把孩子带动起来也不紧张了，拍完我还在照相机上看了下，很漂亮，而且我们的表情都很好，很自然。一”</p>
+								<span class="text_3"></span>
+							</span>
+						</a>
+						<a href="#" class="li03" target="_blank">
+							<img src="img/06.jpeg" title="看我萌萌哒-百日留念-深圳市小木马儿童摄影-深圳儿童摄影" alt="深圳儿童摄影-苦咖啡的味道的晒片">
+							<span class="li03_tm">
+								<p class="text_1">苦咖啡的味道：</p>
+								<p class="text_2">“ 带我家宝宝贝拍的百日照，小家伙还挺配合，估计也是觉得小木马家这么温馨可爱，还有美女阿姨陪着玩很高兴，全程拍的都很顺利，中间觉得有点累，喝奶休息了一会就又来的精神，各种抬头，睡倒，摄影师叔叔很辛苦的配合他的姿势拍照。成品出来后很满意，又加钱做了照片墙，等到周岁的时候再来拍一组，也都挂到墙上，推荐小木马家，真的不错”</p>
+								<span class="text_3"></span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>									
+			<div class="sz_main_right">
+				<p class="title"><span class="cx"></span><span class="cx_t">畅销榜</span></p>
+				<ul>
+					<li class="li01">
+						<p class="wm">
+							<span class="yd bg">1</span>
+							<span class="wm_text">小皇国298元儿童摄影</span>
+							<span class="gw">313<i class="gw_s"></i></span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/69154.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/0421/5718907b66fa1_thumb.jpg" width="164" height="116" title="深圳罗湖区儿童摄影团购-深圳小皇国儿童摄影红岭店摄影团购优惠价298.00元" alt="深圳小皇国儿童摄影红岭店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">1</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/69154.html" target="_blank" title="小皇国298元儿童摄影">小皇国298元儿童摄影</a>
+								<p class="xs_bottom_gw">313<span class="shoping"></span></p>
+							</div>
+						</div>
+					</li>
+					<li class="li01">
+						<p class="wm">
+							<span class="yd bg">2</span>
+							<span class="wm_text">维尼宝贝298元儿童照</span>
+							<span class="gw">291<i class="gw_s"></i></span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71754.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1026/581061967196f_thumb.jpg" width="164" height="116" title="深圳龙岗区儿童摄影团购-深圳维尼宝贝韩式儿童摄影摄影团购优惠价298.00元" alt="深圳维尼宝贝韩式儿童摄影">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">2</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71754.html" target="_blank" title="维尼宝贝298元儿童照">维尼宝贝298元儿童照</a>
+								<p class="xs_bottom_gw">291<span class="shoping"></span></p>
+							</div>
+						</div>
+					</li>
+					<li class="li01">
+						<p class="wm">
+							<span class="yd bg">3</span>
+							<span class="wm_text">小熊维尼498元儿童摄影</span>
+							<span class="gw">289<i class="gw_s"></i></span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/74509.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1219/58573bc31da98_thumb.jpg" width="164" height="116" title="深圳罗湖区儿童摄影团购-深圳小熊维尼精致儿童摄影摄影团购优惠价498.00元" alt="深圳小熊维尼精致儿童摄影">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">3</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/74509.html" target="_blank" title="小熊维尼498元儿童摄影">小熊维尼498元儿童摄影</a>
+								<p class="xs_bottom_gw">289<span class="shoping"></span></p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">4</span>
+							<span class="wm_text">贵族天使888元儿童/孕妇/兄妹写真</span>
+							<span class="gw">287<i class="gw_s"></i></span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/74145.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0315/58c9025b5f060_thumb.jpg" width="164" height="116" title="深圳龙岗区儿童摄影团购-深圳贵族天使专业摄影国际连锁机构摄影团购优惠价888.00元" alt="深圳贵族天使专业摄影国际连锁机构">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">4</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/74145.html" target="_blank" title="贵族天使888元儿童/孕妇/兄妹写真">贵族天使888元儿童/孕妇/兄妹写真</a>
+								<p class="xs_bottom_gw">287<span class="shoping"></span></p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">5</span>
+							<span class="wm_text">小皇国598元儿童艺术摄影</span>
+							<span class="gw">276<i class="gw_s"></i></span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/73120.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/0921/57e23ff5c071e_thumb.jpg" width="164" height="116" title="深圳龙华新区儿童摄影团购-深圳深圳龙华小皇国旗舰店摄影团购优惠价598.00元" alt="深圳深圳龙华小皇国旗舰店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">5</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/73120.html" target="_blank" title="小皇国598元儿童艺术摄影">小皇国598元儿童艺术摄影</a>
+								<p class="xs_bottom_gw">276<span class="shoping"></span></p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">6</span>
+							<span class="wm_text">章阁巴黎368元艺术照/儿童照/孕妇</span>
+							<span class="gw">275<i class="gw_s"></i></span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71862.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1101/5818272c164dd_thumb.jpg" width="164" height="116" title="深圳龙华新区儿童摄影团购-深圳章阁巴黎婚纱摄影团购优惠价368.00元" alt="深圳章阁巴黎婚纱">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">6</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71862.html" target="_blank" title="章阁巴黎368元艺术照/儿童照/孕妇">章阁巴黎368元艺术照/儿童照/孕妇</a>
+								<p class="xs_bottom_gw">275<span class="shoping"></span></p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">7</span>
+							<span class="wm_text">优优小王国398新生儿照上门拍</span>
+							<span class="gw">274<i class="gw_s"></i></span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/74527.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0413/58eef7a1e856e_thumb.jpg" width="164" height="116" title="深圳罗湖区儿童摄影团购-深圳优优小王国东湖旗舰店摄影团购优惠价398.00元" alt="深圳优优小王国东湖旗舰店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">7</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/74527.html" target="_blank" title="优优小王国398新生儿照上门拍">优优小王国398新生儿照上门拍</a>
+								<p class="xs_bottom_gw">274<span class="shoping"></span></p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">8</span>
+							<span class="wm_text">章阁巴黎168元儿童照/艺术照/孕妇</span>
+							<span class="gw">269<i class="gw_s"></i></span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71844.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1031/58170835f0ff5_thumb.jpg" width="164" height="116" title="深圳龙华新区儿童摄影团购-深圳章阁巴黎婚纱摄影团购优惠价168.00元" alt="深圳章阁巴黎婚纱">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">8</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71844.html" target="_blank" title="章阁巴黎168元儿童照/艺术照/孕妇">章阁巴黎168元儿童照/艺术照/孕妇</a>
+								<p class="xs_bottom_gw">269<span class="shoping"></span></p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">9</span>
+							<span class="wm_text">小皇国396元儿童摄影</span>
+							<span class="gw">268<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/70989.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/0921/57e23fdd00b48_thumb.jpg" width="164" height="116" title="深圳龙华新区儿童摄影团购-深圳深圳龙华小皇国旗舰店摄影团购优惠价396.00元" alt="深圳深圳龙华小皇国旗舰店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">9</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/70989.html" target="_blank" title="小皇国396元儿童摄影">小皇国396元儿童摄影</a>
+								<p class="xs_bottom_gw">268<span class="shoping"></span></p>
+							</div>
+						</div>
+					</li>						
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="sz">
+		<h2 class="sz_h2"></h2>
+		<a href="http://shenzhen.napai.cn/sheying/ertong" target="_blank"><p class="sz_p">241款深圳精装婚纱摄影服务</p></a>
+		<div class="sz_main">
+			<div class="sz_main_left">
+				<ul>
+					<li>
+						<a href="#" class="li01" target="_blank">
+							<img src="http://file.napai.cn/Upfiles/share/2016/1026/5810080e8c1db.jpg" title="妞妞的写真晒片-深圳市小木马儿童摄影-深圳儿童摄影" alt="深圳儿童摄影-妞妞的新发现的晒片">
+							<span class="li01_tm">
+								<p class="text_1">妞妞的新发现：</p>
+								<p class="text_2">“ 拍的时候孩子有一段时间可能是累了，状态不太好，摄影师果断让休息，陪着玩了好久才又继续拍的，前几天取了照片，看到排版效果还不错，有个别照片拍的真是大爱，再加上店内的场景相比较同规模的摄影工作室而言，真心算还可以的了，性价比绝对高。宝宝大点儿应该还会去拍。呵呵，推荐哦！”</p>
+								<span class="text_3"></span>
+							</span>
+						</a>
+						<a href="#" class="li02" target="_blank">
+							<img src="http://file.napai.cn/Upfiles/share/2016/1026/581007d5397ef.jpg" title="逗趣宝贝的照片-深圳市小木马儿童摄影-深圳儿童摄影" alt="深圳儿童摄影-进入童袜的晒片">	
+							<span class="li02_tm">
+								<p class="text_1">进入童袜：</p>
+								<p class="text_2">“ 是亲戚推荐的，本来想去店里看下在定的，由于工作的原因，在哪拍网看到有详细的样片，客片以及价格，里面的东西也很多，就订了。工作人员就很热情，而且店里的环境非常的好。化妆师摄影师都很仔细，摄影师很幽默，不一会就把孩子带动起来也不紧张了，拍完我还在照相机上看了下，很漂亮，而且我们的表情都很好，很自然。一”</p>
+								<span class="text_3"></span>
+							</span>
+						</a>
+						<a href="#" class="li03" target="_blank">
+							<img src="http://file.napai.cn/Upfiles/share/2016/1026/58100723d898d.jpg" title="看我萌萌哒-百日留念-深圳市小木马儿童摄影-深圳儿童摄影" alt="深圳儿童摄影-苦咖啡的味道的晒片">
+							<span class="li03_tm">
+								<p class="text_1">苦咖啡的味道：</p>
+								<p class="text_2">“ 带我家宝宝贝拍的百日照，小家伙还挺配合，估计也是觉得小木马家这么温馨可爱，还有美女阿姨陪着玩很高兴，全程拍的都很顺利，中间觉得有点累，喝奶休息了一会就又来的精神，各种抬头，睡倒，摄影师叔叔很辛苦的配合他的姿势拍照。成品出来后很满意，又加钱做了照片墙，等到周岁的时候再来拍一组，也都挂到墙上，推荐小木马家，真的不错”</p>
+								<span class="text_3"></span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>									
+			<div class="sz_main_right">
+				<p class="title"><span class="cx"></span><span class="cx_t">畅销榜</span></p>
+				<ul>
+					<li class="li01">
+						<p class="wm" style="">
+							<span class="yd bg">1</span>
+							<span class="wm_text">印象季2899元婚纱摄影</span>
+							<span class="gw">724<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71391.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/0808/57a82bd01ae89_thumb.jpg" width="164" height="116" title="深圳罗湖区婚纱摄影团购-深圳印象季婚纱摄影工作室摄影团购优惠价2899.00元" alt="深圳印象季婚纱摄影工作室">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">1</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71391.html" target="_blank" title="印象季2899元婚纱摄影">印象季2899元婚纱摄影</a>
+								<p class="xs_bottom_gw">724<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li01">
+						<p class="wm">
+							<span class="yd bg">2</span>
+							<span class="wm_text">印象季3998元婚纱摄影</span>
+							<span class="gw">688<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71392.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/0808/57a82e022f1d5_thumb.jpg" width="164" height="116" title="深圳罗湖区婚纱摄影团购-深圳印象季婚纱摄影工作室摄影团购优惠价3998.00元" alt="深圳印象季婚纱摄影工作室">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">2</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71392.html" target="_blank" title="印象季3998元婚纱摄影">印象季3998元婚纱摄影</a>
+								<p class="xs_bottom_gw">688<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li01">
+						<p class="wm">
+							<span class="yd bg">3</span>
+							<span class="wm_text">巴黎婚纱3888元婚纱摄影</span>
+							<span class="gw">677<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/32889.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/0413/570dc12536581_thumb.jpg" width="164" height="116" title="深圳龙岗区婚纱摄影团购-深圳深圳巴黎婚纱影楼摄影团购优惠价3888.00元" alt="深圳深圳巴黎婚纱影楼">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">3</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/32889.html" target="_blank" title="巴黎婚纱3888元婚纱摄影">巴黎婚纱3888元婚纱摄影</a>
+								<p class="xs_bottom_gw">677<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">4</span>
+							<span class="wm_text">芭菲视觉3999元婚纱照</span>
+							<span class="gw">599<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71792.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1027/5811d08d6944a_thumb.jpg" width="164" height="116" title="深圳南山区婚纱摄影团购-深圳芭菲视觉南山店摄影团购优惠价3999.00元" alt="深圳芭菲视觉南山店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">4</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71792.html" target="_blank" title="芭菲视觉3999元婚纱照">芭菲视觉3999元婚纱照</a>
+								<p class="xs_bottom_gw">599<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">5</span>
+							<span class="wm_text">圣玛利亚2999元婚纱照</span>
+							<span class="gw">559 <i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/67132.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/0520/573ece5e93bc1_thumb.jpg" width="164" height="116" title="深圳宝安区婚纱摄影团购-深圳深圳圣玛利亚婚纱摄影摄影团购优惠价2999.00元" alt="深圳深圳圣玛利亚婚纱摄影">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">5</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/67132.html" target="_blank" title="圣玛利亚2999元婚纱照">圣玛利亚2999元婚纱照</a>
+								<p class="xs_bottom_gw">559<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">6</span>
+							<span class="wm_text">摄十度2999元婚纱照</span>
+							<span class="gw">551<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/49829.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2015/0925/5605196242056_thumb.jpg" width="164" height="116" title="深圳罗湖区婚纱摄影团购-深圳摄十度摄影机构摄影团购优惠价2999.00元" alt="深圳摄十度摄影机构">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">6</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/49829.html" target="_blank" title="摄十度2999元婚纱照">摄十度2999元婚纱照</a>
+								<p class="xs_bottom_gw">551<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">7</span>
+							<span class="wm_text">芭菲视觉2999元婚纱照</span>
+							<span class="gw">538<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71793.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1027/5811d84ff07c8_thumb.jpg" width="164" height="116" title="深圳南山区婚纱摄影团购-深圳芭菲视觉南山店摄影团购优惠价2999.00元" alt="深圳芭菲视觉南山店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">7</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71793.html" target="_blank" title="芭菲视觉2999元婚纱照">芭菲视觉2999元婚纱照</a>
+								<p class="xs_bottom_gw">538<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">8</span>
+							<span class="wm_text">芭菲视觉4999元婚纱照</span>
+							<span class="gw">519<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71795.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1028/5812aa904e6fc_thumb.jpg" width="164" height="116" title="深圳南山区婚纱摄影团购-深圳芭菲视觉南山店摄影团购优惠价4999.00元" alt="深圳芭菲视觉南山店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">8</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71795.html" target="_blank" title="芭菲视觉4999元婚纱照">芭菲视觉4999元婚纱照</a>
+								<p class="xs_bottom_gw">519<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">9</span>
+							<span class="wm_text">摄十度3999元婚纱照</span>
+							<span class="gw">517<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/64505.html" target="_blank">
+								<img src="http://file.napai.cn/static_old/team/2014/0919/14110917696375_thumb.jpg" width="164" height="116" title="深圳罗湖区婚纱摄影团购-深圳摄十度摄影机构摄影团购优惠价3999.00元" alt="深圳摄十度摄影机构">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">9</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/64505.html" target="_blank" title="摄十度3999元婚纱照">摄十度3999元婚纱照</a>
+								<p class="xs_bottom_gw">517<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="sz">
+		<h2 class="sz_h2"></h2>
+		<a href="http://shenzhen.napai.cn/sheying/ertong" target="_blank"><p class="sz_p">159款深圳精装个人写真服务</p></a>
+		<div class="sz_main">
+			<div class="sz_main_left">
+				<ul>
+					<li>
+						<a href="#" class="li01" target="_blank">
+							<img src="http://file.napai.cn/Upfiles/share/2017/0209/DFPENXGUHPRZGQHRTGFMQFXZASTDILNL.jpeg" title="妞妞的写真晒片-深圳市小木马儿童摄影-深圳儿童摄影" alt="深圳儿童摄影-妞妞的新发现的晒片">
+							<span class="li01_tm">
+								<p class="text_1">妞妞的新发现：</p>
+								<p class="text_2">“ 拍的时候孩子有一段时间可能是累了，状态不太好，摄影师果断让休息，陪着玩了好久才又继续拍的，前几天取了照片，看到排版效果还不错，有个别照片拍的真是大爱，再加上店内的场景相比较同规模的摄影工作室而言，真心算还可以的了，性价比绝对高。宝宝大点儿应该还会去拍。呵呵，推荐哦！”</p>
+								<span class="text_3"></span>
+							</span>
+						</a>
+						<a href="#" class="li02" target="_blank">
+							<img src="http://file.napai.cn/Upfiles/share/2016/1222/BBWLWVTPTSRXYXRDNAPRSAZEKJLIHWSJ.jpeg" title="逗趣宝贝的照片-深圳市小木马儿童摄影-深圳儿童摄影" alt="深圳儿童摄影-进入童袜的晒片">	
+							<span class="li02_tm">
+								<p class="text_1">进入童袜：</p>
+								<p class="text_2">“ 是亲戚推荐的，本来想去店里看下在定的，由于工作的原因，在哪拍网看到有详细的样片，客片以及价格，里面的东西也很多，就订了。工作人员就很热情，而且店里的环境非常的好。化妆师摄影师都很仔细，摄影师很幽默，不一会就把孩子带动起来也不紧张了，拍完我还在照相机上看了下，很漂亮，而且我们的表情都很好，很自然。一”</p>
+								<span class="text_3"></span>
+							</span>
+						</a>
+						<a href="#" class="li03" target="_blank">
+							<img src="http://file.napai.cn/Upfiles/share/2016/0926/HUPKJFVFRWPTMHIXNFEDYZJHIVWPDIUK.jpeg" title="看我萌萌哒-百日留念-深圳市小木马儿童摄影-深圳儿童摄影" alt="深圳儿童摄影-苦咖啡的味道的晒片">
+							<span class="li03_tm">
+								<p class="text_1">苦咖啡的味道：</p>
+								<p class="text_2">“ 带我家宝宝贝拍的百日照，小家伙还挺配合，估计也是觉得小木马家这么温馨可爱，还有美女阿姨陪着玩很高兴，全程拍的都很顺利，中间觉得有点累，喝奶休息了一会就又来的精神，各种抬头，睡倒，摄影师叔叔很辛苦的配合他的姿势拍照。成品出来后很满意，又加钱做了照片墙，等到周岁的时候再来拍一组，也都挂到墙上，推荐小木马家，真的不错”</p>
+								<span class="text_3"></span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>									
+			<div class="sz_main_right">
+				<p class="title"><span class="cx"></span><span class="cx_t">畅销榜</span></p>
+				<ul>
+					<li class="li01">
+						<p class="wm" style="">
+							<span class="yd bg">1</span>
+							<span class="wm_text">钟爱一生599元个人写真/儿童照/孕妇照</span>
+							<span class="gw">465<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/74951.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0522/59225d3a79f2d_thumb.jpg" width="164" height="116" title="深圳宝安区个人写真团购-深圳深圳钟爱一生婚纱摄影店摄影团购优惠价599.00元" alt="深圳深圳钟爱一生婚纱摄影店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">1</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/74951.html" target="_blank" title="钟爱一生599元个人写真/儿童照/孕妇照">钟爱一生599元个人写真/儿童照/孕妇照</a>
+								<p class="xs_bottom_gw">465<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li01">
+						<p class="wm">
+							<span class="yd bg">2</span>
+							<span class="wm_text">钟爱一生299元个人写真/儿童照/孕妇照</span>
+							<span class="gw">456<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/70108.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/0816/57b2d026d2b45_thumb.jpg" width="164" height="116" title="深圳宝安区个人写真团购-深圳深圳钟爱一生婚纱摄影店摄影团购优惠价299.00元" alt="深圳深圳钟爱一生婚纱摄影店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">2</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/70108.html" target="_blank" title="钟爱一生299元个人写真/儿童照/孕妇照">钟爱一生299元个人写真/儿童照/孕妇照</a>
+								<p class="xs_bottom_gw">456<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li01">
+						<p class="wm">
+							<span class="yd bg">3</span>
+							<span class="wm_text">米兰婚纱99元个人形象照</span>
+							<span class="gw">412<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/74920.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0519/591e9c3b0c2f2_thumb.jpg" width="164" height="116" title="深圳龙岗区个人写真团购-深圳米兰婚纱摄影（南岭店）摄影团购优惠价99.00元" alt="深圳米兰婚纱摄影（南岭店）">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">3</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/74920.html" target="_blank" title="米兰婚纱99元个人形象照">米兰婚纱99元个人形象照</a>
+								<p class="xs_bottom_gw">412<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">4</span>
+							<span class="wm_text">情系一生888元个人写真/孕妇照/儿童照摄影</span>
+							<span class="gw">389<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/75090.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0213/58a1192990d3d_thumb.jpg" width="164" height="116" title="深圳宝安区个人写真团购-深圳情系一生婚纱艺术摄影摄影团购优惠价888.00元" alt="深圳情系一生婚纱艺术摄影">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">4</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/75090.html" target="_blank" title="情系一生888元个人写真/孕妇照/儿童照摄影">情系一生888元个人写真/孕妇照/儿童照摄影</a>
+								<p class="xs_bottom_gw">389<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">5</span>
+							<span class="wm_text">情系一生888元个人写真/孕妇照/儿童艺术照</span>
+							<span class="gw">389<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/74442.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0213/58a1192fe8b4a_thumb.jpg" width="164" height="116" title="深圳宝安区个人写真团购-深圳情系一生婚纱摄影（西乡店）摄影团购优惠价888.00元" alt="深圳情系一生婚纱摄影（西乡店）">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">5</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/74442.html" target="_blank" title="情系一生888元个人写真/孕妇照/儿童艺术照">情系一生888元个人写真/孕妇照/儿童艺术照</a>
+								<p class="xs_bottom_gw">389<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">6</span>
+							<span class="wm_text">固戍薇薇新娘999元个人写真</span>
+							<span class="gw">359<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71737.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0227/58b3b319a6335_thumb.jpg" width="164" height="116" title="深圳宝安区个人写真团购-深圳固戍薇薇新娘婚纱摄影店摄影团购优惠价999.00元" alt="深圳固戍薇薇新娘婚纱摄影店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">6</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71737.html" target="_blank" title="固戍薇薇新娘999元个人写真">固戍薇薇新娘999元个人写真</a>
+								<p class="xs_bottom_gw">359<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">7</span>
+							<span class="wm_text">美时微纪219元个人写真</span>
+							<span class="gw">357<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/74400.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0401/58df11d971856_thumb.jpg" width="164" height="116" title="深圳宝安区个人写真团购-深圳美时微纪婚纱摄影工作室摄影团购优惠价219.00元" alt="深圳美时微纪婚纱摄影工作室">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">7</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/74400.html" target="_blank" title="美时微纪219元个人写真">美时微纪219元个人写真</a>
+								<p class="xs_bottom_gw">357<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">8</span>
+							<span class="wm_text">美时微纪699元个人写真</span>
+							<span class="gw">357<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/74395.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0401/58df110839303_thumb.jpg" width="164" height="116" title="深圳宝安区个人写真团购-深圳美时微纪婚纱摄影工作室摄影团购优惠价699.00元" alt="深圳美时微纪婚纱摄影工作室">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">8</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/74395.html" target="_blank" title="美时微纪699元个人写真">美时微纪699元个人写真</a>
+								<p class="xs_bottom_gw">357<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">9</span>
+							<span class="wm_text">固戍薇薇新娘298元个人写真</span>
+							<span class="gw">357<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/73654.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0207/58995ffb6a771_thumb.jpg" width="164" height="116" title="深圳宝安区个人写真团购-深圳固戍薇薇新娘婚纱摄影店摄影团购优惠价298.00元" alt="深圳固戍薇薇新娘婚纱摄影店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">9</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/73654.html" target="_blank" title="固戍薇薇新娘298元个人写真">固戍薇薇新娘298元个人写真</a>
+								<p class="xs_bottom_gw">357<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="sz">
+		<h2 class="sz_h2"></h2>
+		<a href="http://shenzhen.napai.cn/sheying/ertong" target="_blank"><p class="sz_p">17款深圳精装孕妇摄影服务</p></a>
+		<div class="sz_main">
+			<div class="sz_main02_left">
+				<div class="L">
+					<a href="http://www.napai.cn/sheying/74153.html" class="L_xz02" target="_blank">
+						<img src="http://file.napai.cn/Upfiles/item/2017/0314/58c77fdd2c54a_thumb.jpg" title="深圳龙岗区孕妇摄影团购-深圳贵族天使专业摄影国际连锁机构摄影团购优惠价699.00元" alt="深圳贵族天使专业摄影国际连锁机构">							
+					</a>
+					<p class="ka"><a href="http://www.napai.cn/sheying/74153.html" target="_blank">贵族天使699元孕妈咪摄影</a></p>
+					<p class="zhe">3.7折 · 已售148</p>
+					<div class="x"></div>
+					<p class="jg">¥699.00</p>
+					<p class="sj">
+                        <span class="s_0"></span>
+                        <a href="http://www.napai.cn/lianmeng/1065.html" target="_blank">贵族天使专业摄影国际连锁机构</a>
+                    </p>
+					<p class="dz">
+                    <span class="d_0"></span>深圳龙岗区-中心城君悦龙庭3期7栋102（龙平西路与愉龙路交汇处）</p>
+				</div>
+				<div class="R">
+					<ul class="R_T">
+						<li class="R_T_01">
+							<a class="img" href="http://www.napai.cn/sheying/74081.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0307/58be2a01813df_thumb.jpg" title="深圳福田区孕妇摄影团购-深圳优优小王国虫虫英龙旗舰店摄影团购优惠价1799.00元" alt="深圳优优小王国虫虫英龙旗舰店">									
+							</a>
+						</li>
+						<li class="R_T_02">
+							<p class="R_T_P"><a href="http://www.napai.cn/sheying/74081.html" target="_blank">优优小王国1799元高端气质孕妇艺术写真摄影</a></p>
+							<p class="R_T_P2">5.2折 · 已售22</p>
+							<div class="R_T_02_x"></div>
+							<p class="R_T_02_jg">¥1799.00</p>
+						</li>
+					</ul>
+					<ul class="R_B">								
+						<li class="R_B_01">
+							<a class="img" href="#" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1031/5816ed5cf238a_thumb.jpg" title="深圳南山区孕妇摄影团购-深圳芭菲视觉南山店摄影团购优惠价699.00元" alt="深圳芭菲视觉南山店">									
+							</a>
+							<p class="R_B_01_p">
+								<a href="http://www.napai.cn/sheying/74077.html" target="_blank">芭菲视觉699元孕妇照</a>
+								<span class="R_B_01_span">3.4折</span>
+							</p>
+						</li>																																							
+						<li class="R_B_02">
+							<a class="img" href="#" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0208/589abec893ab0_thumb.jpg" title="深圳宝安区孕妇摄影团购-深圳龙华薇薇新娘摄影摄影团购优惠价288.00元" alt="深圳龙华薇薇新娘摄影">									
+							</a>
+							<p class="R_B_02_p">
+								<a href="http://www.napai.cn/sheying/73645.html" target="_blank">龙华薇薇新娘288元孕妇照/儿童照/个人写真</a>
+								<span class="R_B_02_span">0.9折</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>								
+			<div class="sz_main_right">
+				<p class="title"><span class="cx"></span><span class="cx_t">畅销榜</span></p>
+				<ul>
+					<li class="li01">
+						<p class="wm">
+							<span class="yd">1</span>
+							<span class="wm_text">芭菲视觉699元孕妇照</span>
+							<span class="gw">665<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/74077.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1031/5816ed5cf238a_thumb.jpg" width="164" height="116" title="深圳南山区孕妇摄影团购-深圳芭菲视觉南山店摄影团购优惠价699.00元" alt="深圳芭菲视觉南山店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">1</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/74077.html" target="_blank" title="芭菲视觉699元孕妇照">芭菲视觉699元孕妇照</a>
+								<p class="xs_bottom_gw">665<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li01">
+						<p class="wm">
+							<span class="yd">2</span>
+							<span class="wm_text">章阁巴黎368元艺术照/儿童照/孕妇</span>
+							<span class="gw">275<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71862.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1101/5818272c164dd_thumb.jpg" width="164" height="116" title="深圳龙华新区儿童摄影团购-深圳章阁巴黎婚纱摄影团购优惠价368.00元" alt="深圳章阁巴黎婚纱">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">2</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71862.html" target="_blank" title="章阁巴黎368元艺术照/儿童照/孕妇">章阁巴黎368元艺术照/儿童照/孕妇</a>
+								<p class="xs_bottom_gw">275<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li01">
+						<p class="wm">
+							<span class="yd">3</span>
+							<span class="wm_text">薇薇新娘199元孕妇摄影</span>
+							<span class="gw">272<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/73382.html" target="_blank">
+								<img src="http://file.napai.cn/static_old/team/2014/0716/14054811969785_thumb.jpg" width="164" height="116" title="深圳罗湖区孕妇摄影团购-深圳薇薇新娘摄影摄影团购优惠价199.00元" alt="深圳薇薇新娘摄影">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">3</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/73382.html" target="_blank" title="薇薇新娘199元孕妇摄影">薇薇新娘199元孕妇摄影</a>
+								<p class="xs_bottom_gw">272<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">4</span>
+							<span class="wm_text">章阁巴黎168元儿童照/艺术照/孕妇</span>
+							<span class="gw">269<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71844.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1031/58170835f0ff5_thumb.jpg" width="164" height="116" title="深圳龙华新区儿童摄影团购-深圳章阁巴黎婚纱摄影团购优惠价168.00元" alt="深圳章阁巴黎婚纱">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">4</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71844.html" target="_blank" title="章阁巴黎168元儿童照/艺术照/孕妇">章阁巴黎168元儿童照/艺术照/孕妇</a>
+								<p class="xs_bottom_gw">269<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">5</span>
+							<span class="wm_text">章阁巴黎268元儿童照/艺术照/孕妇</span>
+							<span class="gw">261<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/71842.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/1031/5817021125b94_thumb.jpg" width="164" height="116" title="深圳龙华新区儿童摄影团购-深圳章阁巴黎婚纱摄影团购优惠价268.00元" alt="深圳章阁巴黎婚纱">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">5</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/71842.html" target="_blank" title="章阁巴黎268元儿童照/艺术照/孕妇">章阁巴黎268元儿童照/艺术照/孕妇</a>
+								<p class="xs_bottom_gw">261<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">6</span>
+							<span class="wm_text">优优小王国1799元高端气质孕妇艺术写真摄影</span>
+							<span class="gw">190<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/74081.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0307/58be2a01813df_thumb.jpg" width="164" height="116" title="深圳福田区孕妇摄影团购-深圳优优小王国虫虫英龙旗舰店摄影团购优惠价1799.00元" alt="深圳优优小王国虫虫英龙旗舰店">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">6</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/74081.html" target="_blank" title="优优小王国1799元高端气质孕妇艺术写真摄影">优优小王国1799元高端气质孕妇艺术写真摄影</a>
+								<p class="xs_bottom_gw">190<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">7</span>
+							<span class="wm_text">龙华薇薇新娘388元孕妇照/写真/儿童照</span>
+							<span class="gw">166<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/73644.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0207/58993e0905af9_thumb.jpg" width="164" height="116" title="深圳宝安区孕妇摄影团购-深圳龙华薇薇新娘摄影摄影团购优惠价388.00元" alt="深圳龙华薇薇新娘摄影">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">7</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/73644.html" target="_blank" title="龙华薇薇新娘388元孕妇照/写真/儿童照">龙华薇薇新娘388元孕妇照/写真/儿童照</a>
+								<p class="xs_bottom_gw">166<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">8</span>
+							<span class="wm_text">龙华薇薇新娘288元孕妇照/儿童照/个人写真</span>
+							<span class="gw">163<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/73645.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2017/0208/589abec893ab0_thumb.jpg" width="164" height="116" title="深圳宝安区孕妇摄影团购-深圳龙华薇薇新娘摄影摄影团购优惠价288.00元" alt="深圳龙华薇薇新娘摄影">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">8</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/73645.html" target="_blank" title="龙华薇薇新娘288元孕妇照/儿童照/个人写真">龙华薇薇新娘288元孕妇照/儿童照/个人写真</a>
+								<p class="xs_bottom_gw">163<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+					<li class="li04">
+						<p class="wm">
+							<span class="yd">9</span>
+							<span class="wm_text">宝贝当家698元孕妇照</span>
+							<span class="gw">150<i class="gw_s"></i>
+                            </span>
+						</p>
+						<div class="xs">
+							<a class="xs_img" href="http://www.napai.cn/sheying/69526.html" target="_blank">
+								<img src="http://file.napai.cn/Upfiles/item/2016/0728/57997c681573c_thumb.jpg" width="164" height="116" title="深圳福田区孕妇摄影团购-深圳宝贝当家专业儿童摄影摄影团购优惠价698.00元" alt="深圳宝贝当家专业儿童摄影">
+							</a>
+							<div class="xs_bottom">
+								<span class="xs_bottom_yd">9</span>
+								<a class="xs_bottom_text" href="http://www.napai.cn/sheying/69526.html" target="_blank" title="宝贝当家698元孕妇照">宝贝当家698元孕妇照</a>
+								<p class="xs_bottom_gw">150<span class="shoping"></span>
+                                </p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="sp lazyload">
+    	<h2 class="sp_h2"></h2>
+		<a href="http://www.napai.cn/shaipian" target="_blank"><p class="sp_p">深圳海量客片参考，选择最佳摄影风格</p></a>
+		<div class="sp_main">
+			<ul class="sp_ul">
+				<li>
+					<img original="http://file.napai.cn/Upfiles/share/2017/0606/59361c4788cbb.jpg" title="【情系一生客片分享】【中国十大杰出婚纱艺术摄影】自然之美，荷-情系一生婚纱艺术摄影-深圳" alt="深圳-情系一生（荷兰花卉小镇）的晒片" src="http://file.napai.cn/Upfiles/share/2017/0606/59361c4788cbb.jpg">    					
+					<div class="sp_rgba">
+						<div class="sp_rgba_text">
+							<a href="http://www.napai.cn/shaipian/28765.html" target="_blank"><p class="f">情系一生（荷兰花卉小镇）:</p></a>
+							<div class="sp_rgba_hr"></div>
+							<p class="sp_rgba_text00">
+								<a href="http://www.napai.cn/shaipian/28765.html" target="_blank">情系一生客片分享】【中国十大杰出婚纱艺术摄影】自然之美，荷兰小镇外景基地，成长的太快能在相册中找回曾经的美</a>
+							</p>
+						 	<p class="lj"><a href="http://www.napai.cn/lianmeng/4175.html" target="_blank">情系一生婚纱艺术摄影</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img original="http://file.napai.cn/Upfiles/share/2017/0605/593507dd83485.jpg" title="-优优小王国后海旗舰店-深圳" alt="深圳-优优小王国的晒片" src="http://file.napai.cn/Upfiles/share/2017/0605/593507dd83485.jpg">    					
+					<div class="sp_rgba">
+						<div class="sp_rgba_text">
+							<a href="http://www.napai.cn/shaipian/28757.html" target="_blank"><p class="f">优优小王国:</p></a>
+							<div class="sp_rgba_hr"></div>
+							<p class="sp_rgba_text00">
+								<a href="http://www.napai.cn/shaipian/28757.html" target="_blank">【优优小王国客片分享】【中国十大杰出儿童摄影】【深圳儿童摄影】每一次纪录都是一个美好故事的发生在优优，我们不仅仅只是拍照，更是纪录爱的成长与传递......</a>
+							</p>
+						 	<p class="lj"><a href="http://www.napai.cn/lianmeng/64173.html" target="_blank">优优小王国后海旗舰店</a></p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<img original="http://file.napai.cn/Upfiles/share/2017/0602/59311d7fb4420.jpg" title="-优优小王国后海旗舰店-深圳" alt="深圳-优优小王国的晒片" src="http://file.napai.cn/Upfiles/share/2017/0602/59311d7fb4420.jpg">    					
+					<div class="sp_rgba">
+						<div class="sp_rgba_text">
+							<a href="http://www.napai.cn/shaipian/28752.html" target="_blank"><p class="f">优优小王国:</p></a>
+							<div class="sp_rgba_hr"></div>
+							<p class="sp_rgba_text00">
+								<a href="http://www.napai.cn/shaipian/28752.html" target="_blank">【深圳优优小王国客片分享】【中国十大杰出儿童摄影】致我最爱的小天使：总是想把全世界最好的东西都给你 总是想把每一个最美的瞬间都定格无奈你成长的太快，只能在相…</a>
+							</p>
+						 	<p class="lj"><a href="http://www.napai.cn/lianmeng/64173.html" target="_blank">优优小王国后海旗舰店</a></p>
+						</div>
+					</div>
+				</li>
+				<li class="none">
+					<img original="http://file.napai.cn/Upfiles/share/2017/0530/592d512b6f79b.jpg" title="-优优小王国虫虫英龙旗舰店-深圳" alt="深圳-优优小王国的晒片" src="http://file.napai.cn/Upfiles/share/2017/0530/592d512b6f79b.jpg">    					
+					<div class="sp_rgba">
+						<div class="sp_rgba_text">
+							<a href="http://www.napai.cn/shaipian/28731.html" target="_blank"><p class="f">优优小王国:</p></a>
+							<div class="sp_rgba_hr"></div>
+							<p class="sp_rgba_text00">
+								<a href="http://www.napai.cn/shaipian/28731.html" target="_blank">【优优小王国客片分享】&nbsp;欢用镜头捕捉下孩子脸上丰富的表情，高兴也好，生气也罢，这些毫不遮掩、从不修饰的表情语言，只有孩子脸上才有，自然而纯粹</a>
+							</p>
+						 	<p class="lj"><a href="http://www.napai.cn/lianmeng/64171.html" target="_blank">优优小王国虫虫英龙旗舰店</a></p>
+						</div>
+					</div>
+				</li>    			
+			</ul>
+		</div>
+    </div>
+    <div class="kefu">
+		<a href="#" class="weixin"><span class="photo"></span></a>
+		<a href="#" class="ms"></a>
+	   	<a href="javascript:scroll(0,0)" class="top"></a>
+	</div>
+	<div class="flip">
+		<div class="quick1">
+			<p class="q_head"></p>
+			<p class="q_choose choose1">
+				定制拍摄
+				<span></span>
+			</p>
+			<p class="q_choose choose2">
+				加急拍摄
+				<span></span>
+			</p>
+			<p class="close"></p>
+		</div>
+		<div class="quick2">
+			<p class="q_head">
+				<span class="quick_home"></span>
+			</p>
+			<div class="flip_ms">
+				<textarea class="text_p" id="need" name="need"></textarea>	
+				<p class="place">输入您的需求</p>
+				<p class="warn">输入您的需求</p>
+				<a href="#" class="text_a">下一步</a>
+				<p class="speed"></p>
+			</div>
+		</div>
+		<div class="quick4">
+	        <p class="q_head">
+	         	<span class="quick_home"></span>
+	        </p>
+	        <ul class="budget">
+	            <li>3000以下</li>
+	            <li>3000-5000</li>
+	            <li>5000-7000</li>
+	            <li>7000-10000</li>
+	            <li>10000-20000</li>
+	            <li>20000以上</li>
+	        </ul>
+	        <div class="line2">
+             	<p class="l2"></p>
+         	</div>
+    	</div>
+    	<div class="quick5">
+	        <p class="q_head">
+	        	<span class="quick_home"></span>
+	        </p>
+	        <input type="text" placeholder="在此输入手机号" class="inp">
+	        <p class="warm">提交</p>
+	        <p class="notice">手机号只用于哪拍提供咨询<br>我们保证不会泄露您的个人信息</p>
+	        <div class="l3"></div>
+	    </div>
+	    <div class="quick6">
+	        <p class="q_head"></p>
+	        <p class="sub">提交成功</p>
+	        <p class="notice">哪拍将尽快与您联系<br>请您保持开机哦!</p>
+	        <div class="btn"><a href="#" class="fh_index">返回首页</a></div>
+	    </div>
+	</div>
+	<div class="footer">
+        <div class="foot_ban">
+            <a href="#">立即体验</a>
+        </div>
+        <div class="foot_ms"></div>
+        <div class="foot">
+            <div class="footbox">
+                <div class="foot_l">
+                    <p>免费咨询热线：</p>
+                    <h3>400-811-5191</h3>
+                    <h2><img src="img/serves.png" alt="tu"></h2>
+                </div>
+                <div class="foot_c">
+                    <ul>
+                        <li class="li1">
+                            <ul class="line">
+                                <li><a href="about.html">使用帮助</a></li>
+                                <li><a href="about.html">消费流程</a></li>
+                                <li><a href="about.html">意见反馈</a></li>
+                                <li><a href="about.html">常见问题</a></li>
+                            </ul>
+                        </li>
+                        <li class="li1">
+                            <ul class="line">
+                                <li><a href="about.html">商务合作</a></li>
+                                <li><a href="about.html">商户登录</a></li>
+                                <li><a href="about.html">申请入驻</a></li>
+                                <li><a href="about.html">合作须知</a></li>
+                            </ul>
+                        </li>
+                        <li class="li1">
+                            <ul class="line">
+                                <li><a href="about.html">关于哪拍</a></li>
+                                <li><a href="about.html">关于我们</a></li>
+                                <li><a href="about.html">联系我们</a></li>
+                                <li><a href="about.html">侵权举报</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h2>获取data数据</h2>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+<script>
+$(function(){
+	$('#get').click(function(){
+		alert();
+		$.ajax({
+		    url:'data/index.json',
+		    type:'GET', //GET
+		    async:true,    //或false,是否异步
+		    dataType:'json',    //返回的数据格式：json/xml/html/script/jsonp/text
+		    success:function(data,textStatus,jqXHR){
+		        console.log(data[1].choose.address)
+		         
+		    },
+		    error:function(xhr,textStatus){
+		        console.log('错误')
+		        console.log(xhr)
+		        console.log(textStatus)
+		    },
+		    complete:function(){
+		        console.log('结束')
+		    }
+		})
+	})
+})
+
+</script>
+</body>
+
+</html>
