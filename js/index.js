@@ -4,10 +4,11 @@ $(function(){
 	$hover.hover(function(){
 		$(this).css({color:'#fa6478'})
 	});
-	// $hover.find('a').click(function(){
-	// 	$hover.addClass('active').siblings().removeClass('active');
-	// 	$(this).addClass('current').siblings().removeClass('current');
-	// })
+	$('.top').click(function(){
+		$('html body').stop().animate({
+	        'scrollTop': 0,
+    	},1000)
+	})
 //flip
 	$('.foot_ban').click(function(){
 		$('.flip').css('display','block')
@@ -393,21 +394,21 @@ $(function(){
         $citypicker3.css({background:'lightblue'});
     });
 //drags
-	var flip1=document.querySelector('.flip1');
+	// var flip1=document.querySelector('.flip1');
 	$('.flip1').on('mousedown',function(ev){
         var ev = ev || event;  
         var disX = ev.clientX - this.offsetLeft;  
         var disY = ev.clientY - this.offsetTop;  
         $('.flip1').on('mousemove',function (ev) {  
             var ev = ev || event;  
-            flip1.style.left = ev.clientX - disX + 'px'; 
-            flip1.style.top = ev.clientY - disY + 'px';  
+            this.style.left = ev.clientX - disX + 'px'; 
+            this.style.top = ev.clientY - disY + 'px';  
         });  
         $('.flip1').on('mouseup',function(){  
-            $('.flip1').off('mousemove'); 
+            $(this).off('mousemove'); 
         });  
         return false;  
-	}) 
+	})
 //about
 	$('.about .bord ul li').click(function () {
 		var index = $(this).index();
@@ -419,7 +420,7 @@ $(function(){
 		var slip = $('.bgcolor');
 		var a = $('.about .bord ul li:first');
 		slip.css({
-			'top': parseInt(a.position().top) + 'px'
+			top: parseInt(a.position().top) + 'px'
 		});
 		$('.about .bord ul li').mouseenter(function () {
 			if (slip.css('display') == 'none') {
@@ -643,4 +644,43 @@ $(function(){
 
 
 		});
+//liuyanban
+	$('.ms').click(function(){
+		$('.liuyan_box').css({display:'block'})
+	})
+	$('.close').click(function(){
+		$('.liuyan_box').css({display:'none'})
+	})
+	var ipt = document.getElementById("ipt");
+	var txt = document.getElementById('txt');
+	var textarea = document.getElementById("text");
+	ipt.onclick = function(){
+		var textValue = textarea.value.LTrim();		
+		textarea.value="";
+		if(textValue.length>0 ){
+			var divs = document.createElement("div");
+			var imgs = document.createElement("img");
+			var ps = document.createElement("p");
+			var inputs = document.createElement("input");
+			divs.setAttribute("class","creatediv");
+			imgs.setAttribute('class',"createimg");
+			ps.setAttribute("class","createdivs");
+			inputs.setAttribute("class","createinput");
+			imgs.src="img/head.jpg";
+			inputs.type="button";
+			inputs.value="删除";
+			ps.innerHTML=textValue;
+			divs.appendChild(imgs);
+			divs.appendChild(ps);
+			divs.appendChild(inputs);
+			if(txt.children.length==0){
+				txt.appendChild(divs);
+			}else{
+				txt.insertBefore(divs,get_firstChild(txt))
+			}
+			inputs.onclick = function(){
+				this.parentNode.parentNode.removeChild(this.parentNode)
+			}
+		}
+	}
 });

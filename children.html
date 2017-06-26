@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>document</title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 	<script src='js/index.js'></script>
 	<script src="js/xml.js"></script>
 </head>
@@ -39,7 +39,7 @@
 						<li><a href="index.html">首页</a></li>
 						<li><a href="dress.html">婚纱摄影</a></li>
 						<li><a href="movie.html">微电影</a></li>
-						<li><a href="children.html">儿童摄影</a></li>
+						<li class="active"><a href="children.html" class="current">儿童摄影</a></li>
 						<li><a href="personal.html">艺术写真</a></li>
 						<li><a href="woman.html">孕妇摄影</a></li>
 					</ul>
@@ -47,46 +47,70 @@
 			</div>
 		</div>
 	</div>
-	<div class="U_input">
-		<div class="login1">
-			<div class="title">
-				<div class="bg_l"></div>
-				<div><h2>登陆哪拍</h2></div>
-				<div class="bg_r"></div>
-			</div>
-			<div class="icon">
-				<a href="#"><div class="sina"></div></a>
-				<a href="#"><div class="qq"></div></a>
-				<a href="#"><div class="wx"></div></a>
-			</div>
-			<div class="login_box">
-				<input type="text" name="username" class="inp_box" placeholder="请输入邮箱／用户名／手机号">
-				<input type="password" name="password" placeholder="请输入密码" class="inp_box">
-				<input type="password" name="password" placeholder="请验证码" class="inp_box">
-			</div>
-			<div class="login_ms">
-				<span class="Uauto on" id="login_auto">
-				<input type="hidden" value="1" name="login_auto">下次自动登录</span>
-				<a href="lostpassword.html" class="lostpassword">忘记密码？</a>
-			</div>					
-			<input class="Ubutton" id="login_submit" type="button" value="登录">
-			<a href="register.html" class="Ulo_reg">还没有帐号？马上注册</a>
+	<div class="filterTop">
+	    <div class="one filter_group">
+	    	<label class="l">类别</label>
+	        <ul>
+	        	<li class="current"><a href="#">不限</a></li> 
+				<li><a href="#">婚纱摄影</a></li>
+				<li><a href="#">儿童摄影</a></li> 
+				<li><a href="#">个人写真</a></li> 
+				<li><a href="#">孕妇摄影</a></li> 
+				<li><a href="#">古装摄影</a></li> 
+			</ul>
+	    </div>
+	    <div class="one">
+	    	<label class="l2">地区</label>
+	        <ul>
+	            <li class="current"><a href="#">不限</a></li> 
+				<li><a href="#">宝安区</a></li> 
+				<li><a href="#">坪山新区</a></li>
+				<li><a href="#">南山区</a></li>
+				<li><a href="#">罗湖区</a></li>
+				<li><a href="#">龙华新区</a></li>
+				<li><a href="#">龙岗区</a></li>
+				<li><a href="#">光明新区</a></li>
+				<li><a href="#">福田区</a></li>
+				<li><a href="#">大鹏新区</a></li>
+				<li><a href="#">盐田区</a> </li>       
+			</ul>
+	    </div>
+	    <div class="one">
+	    	<label class="l3">价格</label>
+	        <ul>
+	            <li class="current"><a href="#">不限</a></li>
+				<li><a href="#">300以下</a></li> 
+				<li><a href="#">300-500</a></li>
+				<li><a href="#">500-1000</a></li>
+				<li><a href="#">1000-2000</a></li>
+				<li><a href="#">2000-3000</a></li>
+				<li><a href="#">3000-5000</a></li>
+				<li><a href="#">5000以上</a></li>
+	        </ul>
+	    </div>
+	</div>
+	<div class="Fmain">
+		<ul class="itemlist lazyload cf"></ul>
+		<div class="page page_post_jump">
+			<ul class="paginator">
+				<li>共242条记录32条/页</li>
+				<li class="current"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">6</a></li>
+				<li><a href="#">7</a></li>
+				<li><a href="#">8</a></li>
+				<li><a href="#">下一页</a></li>
+				<li><a href="#">末页</a></li>
+			</ul>
 		</div>
-		<div class="login2 current">
-			<div class="title">
-				<div class="bg_l"></div>
-				<h2>手机扫码，安全登录</h2>
-				<div class="bg_r"></div>
-			</div>
-			<img src="img/icon_erweima.png" alt="tu" class="erweima">
-			<a href="register.html" class="Ulo_reg">还没有帐号？马上注册</a>
-		</div>
-		<div class="way"><a href="#" id="way"></a></div>
 	</div>
 	<div class="kefu">
 		<a href="#" class="weixin"><span class="photo"></span></a>
 		<a href="#" class="ms"></a>
-	   	<a href="javascript:viod(0)" class="top"></a>
+	   	<a href="javascript:" class="top"></a>
 	</div>
 	<div class="flip">
 		<div class="quick1">
@@ -188,7 +212,7 @@
             </div>
         </div>
     </div>
-      <div class="liuyan_box">
+	<div class="liuyan_box">
 		<div class="liuyan">
 			<span>您有什么比较好的建议：</span>
 			<div class="close"></div>
@@ -197,5 +221,82 @@
 			<div id="txt" ></div>
 		</div>
 	</div>
+    <script>
+    	$(function(){
+    		var selectdata='';
+    		ajax();   		 
+	        $('.one').find('li').find('a').click(function(){
+	        	selectdata=$(this).text();
+	        	ajax();
+	        })
+	        function ajax(){
+	        	$.ajax({
+				    url:'data/index.json',
+				    type:'GET',
+				    async:true,
+				    dataType:'json',
+				    success:function(data,textStatus,jqXHR){
+				        console.log(data);
+				        var $Ul=$(".itemlist");
+				        var str='';
+				        for(var i=0;i<data.length;i++){
+				        	switch(selectdata){
+				        		case data[i].any :
+				        			showdata();
+				        			break;
+				        		case data[i].address :
+				        			showdata();
+				        			break;
+				        		case data[i].kinds :
+				        			showdata();
+				        			break;
+				        		case data[i].prices :
+				        			showdata();
+				        			break;
+				        		case '' :
+				        			showdata();
+
+				        	}
+				        	function showdata(){
+				        		str+='<li>\
+				        			<div class="i">\
+				        				<a href="shop.html" target="_blank">\
+				        					<img alt="巴黎婚纱3999元婚纱照" src='+data[i].content.url+'>\
+				        				</a>\
+				        				<p class="i_txt">'+data[i].content.title+
+				        					'<span class="tg_tj"></span>\
+										</p>\
+										<p class="i_txt02">'+data[i].content.price+'</p>\
+										<p class="i_txt03"><del>'+data[i].content.sPrice+'</del></p>\
+										<p class="i_txt04">'+data[i].content.sell+'</p>\
+									<div class="i_show">\
+											<a target="_blank" href="#">\
+												<p class="i_show_p1">\
+													<span class="biao_v">'+data[i].content.shop+'</span>\
+												</p>\
+											</a>\
+											<p class="i_show_p2">'+data[i].content.showAddress+'</p>\
+										</div>\
+									</div>\
+								</li>'
+								
+				        	}
+				        	
+				        }
+				        $(".itemlist").html(str);
+				    },
+				    error:function(xhr,textStatus){
+				        console.log('错误')
+				        console.log(xhr)
+				        console.log(textStatus)
+				    },
+				    complete:function(){
+				        console.log('结束')
+				    }
+				})
+	        };
+			
+		})
+    </script>
 </body>
 </html>

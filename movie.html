@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>document</title>
-	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
 	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 	<script src='js/index.js'></script>
 	<script src="js/xml.js"></script>
 </head>
@@ -38,7 +38,7 @@
 					<ul>
 						<li><a href="index.html">首页</a></li>
 						<li><a href="dress.html">婚纱摄影</a></li>
-						<li><a href="movie.html">微电影</a></li>
+						<li class="active"><a href="movie.html" class="current">微电影</a></li>
 						<li><a href="children.html">儿童摄影</a></li>
 						<li><a href="personal.html">艺术写真</a></li>
 						<li><a href="woman.html">孕妇摄影</a></li>
@@ -47,42 +47,29 @@
 			</div>
 		</div>
 	</div>
-	<div class="U_input">
-		<div class="login1">
-			<div class="title">
-				<div class="bg_l"></div>
-				<div><h2>登陆哪拍</h2></div>
-				<div class="bg_r"></div>
-			</div>
-			<div class="icon">
-				<a href="#"><div class="sina"></div></a>
-				<a href="#"><div class="qq"></div></a>
-				<a href="#"><div class="wx"></div></a>
-			</div>
-			<div class="login_box">
-				<input type="text" name="username" class="inp_box" placeholder="请输入邮箱／用户名／手机号">
-				<input type="password" name="password" placeholder="请输入密码" class="inp_box">
-				<input type="password" name="password" placeholder="请验证码" class="inp_box">
-			</div>
-			<div class="login_ms">
-				<span class="Uauto on" id="login_auto">
-				<input type="hidden" value="1" name="login_auto">下次自动登录</span>
-				<a href="lostpassword.html" class="lostpassword">忘记密码？</a>
-			</div>					
-			<input class="Ubutton" id="login_submit" type="button" value="登录">
-			<a href="register.html" class="Ulo_reg">还没有帐号？马上注册</a>
-		</div>
-		<div class="login2 current">
-			<div class="title">
-				<div class="bg_l"></div>
-				<h2>手机扫码，安全登录</h2>
-				<div class="bg_r"></div>
-			</div>
-			<img src="img/icon_erweima.png" alt="tu" class="erweima">
-			<a href="register.html" class="Ulo_reg">还没有帐号？马上注册</a>
-		</div>
-		<div class="way"><a href="#" id="way"></a></div>
+	<div class="filterTop">
+	    <div class="one">
+	    	<label class="l2">地区</label>
+	        <ul>
+	            <li class="current"><a href="#">不限</a></li>
+	            <li><a href="#">三亚</a></li> 
+				<li><a href="#">巴厘岛</a></li> 
+				<li><a href="#">普吉岛</a></li>
+				<li><a href="#">马尔代夫</a></li>
+				<li><a href="#">巴黎</a></li>
+				<li><a href="#">丽江</a></li>
+				<li><a href="#">大理</a></li>
+				<li><a href="#">杭州</a></li>
+				<li><a href="#">北京</a></li>
+				<li><a href="#">广州</a></li> 
+				<li><a href="#">亚龙湾</a></li>
+				<li><a href="#">铂锐</a></li>
+				<li><a href="#">青岛</a></li>
+				<li><a href="#">上海</a></li>     
+			</ul>
+	    </div>
 	</div>
+	<div class="video_box"></div>
 	<div class="kefu">
 		<a href="#" class="weixin"><span class="photo"></span></a>
 		<a href="#" class="ms"></a>
@@ -188,7 +175,7 @@
             </div>
         </div>
     </div>
-      <div class="liuyan_box">
+    <div class="liuyan_box">
 		<div class="liuyan">
 			<span>您有什么比较好的建议：</span>
 			<div class="close"></div>
@@ -197,5 +184,58 @@
 			<div id="txt" ></div>
 		</div>
 	</div>
+    <script>
+    	$(function(){
+    		var selectdata='';
+    		ajax();   		 
+	        $('.one').find('li').find('a').click(function(){
+	        	selectdata=$(this).text();
+	        	ajax();
+	        })
+	        function ajax(){
+	        	$.ajax({
+				    url:'data/video.json',
+				    type:'GET',
+				    async:true,
+				    dataType:'json',
+				    success:function(data,textStatus,jqXHR){
+				        console.log(data);
+				        var $Div=$(".video_box");
+				        var str='';
+				        for(var i=0;i<data.length;i++){
+				        	switch(selectdata){
+				        		case data[i].all :
+				        			showdata();
+				        			break;
+				        		case data[i].vieoAddress :
+				        			showdata();
+				        			break;
+				        		case '' :
+				        			showdata();
+
+				        	}
+				        	function showdata(){
+				        		str+='<div class="video">\
+										<embed src='+data[i].url+' type="application/x-shockwave-flash" width="100%" height="100%" play="false" flashvars="autoplay=false&play=false" menu="false" hidden="false" loop="false" wmode="transparent" allowfullscreen="true" allowscriptaccess="always">\
+									</div>'
+								
+				        	}
+				        	
+				        }
+				        $(".video_box").html(str);
+				    },
+				    error:function(xhr,textStatus){
+				        console.log('错误')
+				        console.log(xhr)
+				        console.log(textStatus)
+				    },
+				    complete:function(){
+				        console.log('结束')
+				    }
+				})
+	        };
+			
+		})
+    </script>
 </body>
 </html>
