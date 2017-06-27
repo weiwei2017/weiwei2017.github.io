@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body{margin:0;font-size: 12px;font-family:"微软雅黑";}
+p{margin:0;}
+ul,ol{margin:0;padding:0;list-style:none;}
+.fl{float:left;}
+.fr{float:right;}
+input{outline: none;}
+a{text-decoration:none;color:#000;outline: none;}
+
+.RM {
+    width: 1200px;
+    margin: 0 auto;
+}.RM_h2 {
+    width: 1200px;
+    line-height: 75px;
+    height: 75px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    background: url(img/title.png) no-repeat 200px 0;
+}
+.RM_main {
+    height: 413px;
+    margin-top: 40px;
+    position: relative;
+}
+.RM_main .LB {
+    width: 1200px;
+    height: 413px;
+    overflow: hidden;
+    position: relative;
+}.RM_main .LB ul {
+    width: 20000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: -390px;
+    /*left: -3960px;*/
+}.RM_main .LB ul li {
+    width: 660px;
+    height: 413px;
+    float: left;
+    position: relative;
+}.RM_main .LB ul li a {
+    float: left;
+}.RM_main .LB ul li .li_text {
+    width: 660px;
+    height: 85px;
+    text-align: center;
+    background: rgba(81,76,71,0.6);
+    color: #FFF;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    line-height: 50px;
+}
+.RM_main .left_tm,.RM_main .right_tm{width:270px;height:413px;background:rgba(255,255,255,.5);position:absolute;top:0}
+.RM_main .left_tm{left:0}
+.RM_main .right_tm{right:0}
+.RM_main span{width:50px;height:64px;background:url(img/home.png) no-repeat -1px -1139px;position:absolute;right:95px;top:180px}
+.RM_main span.left{background-position: -1px -1056px;left: 95px;}
+.RM_main ol{position:absolute;left:451px;bottom:4px}
+.RM_main ol>li{width:8px;height:8px;float:left;cursor:pointer;margin:0 5px;border-radius:100%;background:gray;}
+.RM_main ol>li.current{background-color:#fa6478}
+  */
+</style>
+<script src="js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+    <div class="RM">
+        <h2 class="RM_h2">
+        <p id="p_none">热门推荐</p></h2>
+        <!-- 轮播图-->
+        <div class="RM_main">
+            <div class="LB">
+                <ul id="ul">
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="img/01.jpg" width="660" height="413" alt="爱唯一2999元婚纱摄影">
+                            <p class="li_text">爱唯一2999元婚纱摄影</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="img/02.jpg" width="660" height="413" alt="爱唯一2999元婚纱摄影">
+                            <p class="li_text">爱唯一2999元婚纱摄影</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="img/03.jpg" width="660" height="413" alt="爱唯一2999元婚纱摄影">
+                            <p class="li_text">爱唯一2999元婚纱摄影</p>
+                        </a>
+                    </li><li>
+                        <a href="shop.html" class="img01">
+                            <img src="img/04.jpeg" width="660" height="413" alt="爱唯一2999元婚纱摄影">
+                            <p class="li_text">爱唯一2999元婚纱摄影</p>
+                        </a>
+                    </li><li>
+                        <a href="shop.html" class="img01">
+                            <img src="img/05.jpeg" width="660" height="413" alt="爱唯一2999元婚纱摄影">
+                            <p class="li_text">爱唯一2999元婚纱摄影</p>
+                        </a>
+                    </li><li>
+                        <a href="shop.html" class="img01">
+                            <img src="img/06.jpeg" width="660" height="413" alt="爱唯一2999元婚纱摄影">
+                            <p class="li_text">爱唯一2999元婚纱摄影</p>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/1027/5811d84ff07c8.jpg" width="660" height="413" alt="芭菲视觉2999元婚纱照">
+                            <p class="li_text">芭菲视觉2999元婚纱照</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/0304/56d91192905b0.jpg" width="660" height="413" alt="爱唯一2999元婚纱摄影">
+                            <p class="li_text">爱唯一2999元婚纱摄影</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2015/0925/5605196242056.jpg" width="660" height="413" alt="摄十度2999元婚纱照">
+                            <p class="li_text">摄十度2999元婚纱照</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/0326/56f5e7a592d7e.jpg" width="660" height="413" alt="影艺阁2888元婚纱照">
+                            <p class="li_text">影艺阁2888元婚纱照</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/0325/56f50461206ef.jpg" width="660" height="413" alt="巴黎婚纱3999元婚纱照">
+                            <p class="li_text">巴黎婚纱3999元婚纱照</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/1111/5825845ad2d72.jpg" width="660" height="413" alt="坂田巴黎2888元婚纱照">
+                            <p class="li_text">坂田巴黎2888元婚纱照</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/0520/573ece5e93bc1.jpg" width="660" height="413" alt="圣玛利亚2999元婚纱照">
+                            <p class="li_text">圣玛利亚2999元婚纱照</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/1027/5811d08d6944a.jpg" width="660" height="413" alt="芭菲视觉3999元婚纱照">
+                            <p class="li_text">芭菲视觉3999元婚纱照</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2017/0518/591d42ddb3bc5.jpg" width="660" height="413" alt="米兰婚纱299元个人写真/儿童/孕妇/全家福">
+                            <p class="li_text">米兰婚纱299元个人写真/儿童/孕妇/全家福</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/0808/57a82dfdf112a.jpg" width="660" height="413" alt="印象季3998元婚纱照+微电影">
+                            <p class="li_text">印象季3998元婚纱照+微电影</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/0728/57996f7e5ce14.jpg" width="660" height="413" alt="宝贝当家198元新生儿上门儿童照">
+                            <p class="li_text">宝贝当家198元新生儿上门儿童照</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/1027/5811d84ff07c8.jpg" width="660" height="413" alt="芭菲视觉2999元婚纱照">
+                            <p class="li_text">芭菲视觉2999元婚纱照</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/0520/573ec5371df00.jpg" width="660" height="413" alt="艺术照闺蜜情侣宝宝孕妈亲子全家福7选1">
+                            <p class="li_text">艺术照闺蜜情侣宝宝孕妈亲子全家福7选1</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/0304/56d91192905b0.jpg" width="660" height="413" alt="爱唯一2999元婚纱摄影">
+                            <p class="li_text">爱唯一2999元婚纱摄影</p>
+                        </a>
+                    </li>                
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2015/0925/5605196242056.jpg" width="660" height="413" alt="摄十度2999元婚纱照">
+                            <p class="li_text">摄十度2999元婚纱照</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="shop.html" class="img01">
+                            <img src="http://file.napai.cn/Upfiles/item/2016/0326/56f5e7a592d7e.jpg" width="660" height="413" alt="影艺阁2888元婚纱照">
+                            <p class="li_text">影艺阁2888元婚纱照</p>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <!--遮罩层-->            
+            <p class="left_tm"></p>
+            <p class="right_tm"></p>
+            <!--箭头-->
+            <span class="left"></span>
+            <span class="right"></span>
+            <!-- 圆点-->
+            <ol id="ol">
+                <li class="current"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+               <!--  <li class="current"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>  -->           
+            </ol>
+        </div>
+    </div>
+<script>
+    //获取位移的距离
+    var width = $('.RM_main ul li').width();
+     // 获取第一个图片 节点对象
+    // var firstImg = $('#ul li').first().clone();
+    // // 放在 ul 的最后
+    // $('#ul').append(firstImg).width($('#ul li').length*$('#ul img').width());
+     var i = 0;
+     var timer;
+     // autoPlay();
+     // 下一张
+    $('.right').click(function(){
+        i++;
+        moveImg(i);
+    })
+    // 上一张
+    $('.left').click(function(){
+        i--;
+        moveImg(i);
+    })
+    // auto play
+    // function autoPlay(){
+    //     timer = setInterval(function(){
+    //         i++;
+    //         moveImg(i);
+    //     }, 1000);
+    // }
+    function moveImg(num){
+        // 如果是最后一张图片我们怎么办
+        if(i==$('#ul li').length){
+            i = 0;
+            $('#ul').css({left:0});
+        }
+        // 是第一张
+        if(i==-1){
+            i=$('#ul li').length-2;
+            $('#ul').css({left:($('#ul li').length-1)*-width});
+        }
+        // 移动图片
+        $('#ul').stop().animate({left:i*-width},1000);
+        // 换小点的标记
+        if(i==($('#ul li').length-1)){
+            $('#ol li').eq(0).addClass('current').siblings().removeClass('current');
+        }else{
+            $('#ol li').eq(i).addClass('current').siblings().removeClass('current');
+        }
+    }
+        // 点击小图标 跳转到指定的页面
+        $('#ol li').click(function(){
+            i = $(this).index();   
+            moveImg(i);
+        })
+</script>
+</body>
+</html>
