@@ -1,14 +1,16 @@
 $(function(){
-// nav move
-	var $hover = $(".nav ul li");
-	$hover.hover(function(){
-		$(this).css({color:'#fa6478'})
-	});
-	$('.top').click(function(){
-		$('html body').stop().animate({
-	        'scrollTop': 0,
-    	},1000)
-	})
+		// nav move
+		var $hover = $(".nav ul li");
+		$hover.hover(function(){
+			$(this).css({color:'#fa6478'})
+		});
+		$('.top').click(function(){
+			//scrollTop兼容性
+			var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+			$(document.documentElement).stop().animate({
+		        'scrollTop':0,
+	    	},1000)
+		})
 //flip
 	$('.foot_ban').click(function(){
 		$('.flip').css('display','block')
@@ -48,7 +50,7 @@ $(function(){
 	});
 	$('.warm').click(function(){
 		if(!(/^1[3|4|5|7|8][0-9]{9}/.test($('.inp').val()))){ 
-	        alert("手机号码有误，请输入11位不以0开头的数字");
+	        $('.no').css('display','block')
 	        $(".quick5").find("input").prop("value","");
 	    }else{
 			$('.quick6').css('display','block');	
@@ -62,8 +64,8 @@ $(function(){
 		$('.quick5').css('display','none');
 		$('.quick6').css('display','none');
 	}); 
-//broken
-	const TWO_PI = Math.PI * 2;
+// //broken
+	var TWO_PI = Math.PI * 2;
 	var images = [], 
 	    imageIndex = 0;
 	var image,
@@ -271,7 +273,7 @@ $(function(){
 	        this.ctx.restore();
 	    }
 	};
-//change
+// //change
 	$('.sz_main_right ul li').hover(function(){
 		$(this).siblings().children('.xs').css('display','none');
 		$(this).siblings().children('.wm').css('display','block');
@@ -296,7 +298,7 @@ $(function(){
         $citypicker3.css({background:'lightblue'});
     });
 //drags
-	// var flip1=document.querySelector('.flip1');
+	var flip1=document.querySelector('.flip1');
 	$('.flip1').on('mousedown',function(ev){
         var ev = ev || event;  
         var disX = ev.clientX - this.offsetLeft;  
