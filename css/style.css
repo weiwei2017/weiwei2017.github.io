@@ -47,7 +47,7 @@ div.video{width: 380px;height:380px;margin:50px auto;overflow: hidden;background
 .q_choose>span:nth-of-type(1){background:url(../img/dz.png) no-repeat}
 .q_choose>span:nth-of-type(2){background:url(../img/jj.png) no-repeat}
 .quick1>p.close{width:18px;height:18px;background:url(../img/gb.png) no-repeat;position:absolute;right:16px;top:16px;cursor:pointer}
-.quick2{width:440px;height:620px;position:absolute;left:calc(50% - 220px);top:calc(50% - 310px);transform:translate(-50%,-50%);display:none;border-radius:0 0 6px 6px;overflow:hidden}
+.quick2{width:440px;height:620px;position:absolute;left:calc(50% - 220px);top:calc(50% - 310px);display:none;border-radius:0 0 6px 6px;overflow:hidden}
 .quick2>.q_head{width:440px;height:200px;background:url(../img/need_tit.png);position:relative}
 .quick2>.q_head>span{width:24px;height:24px;background:url(../img/ic.png);position:absolute;left:18px;top:18px;cursor:pointer}
 .quick2>.flip_ms{width:100%;height:100%;background:#fff;padding:20px;box-sizing:border-box;position:relative}
@@ -56,14 +56,14 @@ div.video{width: 380px;height:380px;margin:50px auto;overflow: hidden;background
 .quick2>.flip_ms>.warn{color:#ff5050;font-size:14px;text-align:center;margin-top:5px;display:none;}
 .quick2>.flip_ms>.speed{width:400px;height:56px;background:url(../img/l1.png);margin-top:55px}
 .quick2>.flip_ms>a{width:100%;height:46px;background:#ff5050;text-align:center;line-height:46px;color:#fff;font-size:18px;display:inline-block;border-radius:6px;margin-top:40px}
-.quick4{width:440px;height:620px;position:absolute;left:calc(50% - 220px);top:calc(50% - 310px);transform:translate(-50%,-50%);display:none;border-radius:0 0 6px 6px;overflow:hidden}
+.quick4{width:440px;height:620px;position:absolute;left:calc(50% - 220px);top:calc(50% - 310px);display:none;border-radius:0 0 6px 6px;overflow:hidden}
 .quick4>.q_head{width:440px;width:440px;height:200px;background:url(../img/ys_tit.png);position:relative}
 .quick4>.q_head>span{width:24px;height:24px;background:url(../img/ic.png);position:absolute;left:18px;top:18px;cursor:pointer}
 .quick4>.budget{width:100%;padding:38px 0 0;background:#fff;box-sizing:border-box;height:340px}
 .quick4>.budget>li{float:left;height:46px;padding:0 18px;border:1px solid #ff5050;border-radius:6px;text-align:center;line-height:46px;color:#ff5050;font-size:16px;margin:0 0 20px 20px;cursor:pointer}
 .quick4>.line2{width:100%;height:60px;background:#fff}
 .quick4>.line2>.l2{width:400px;height:56px;background:url(../img/l2.png) no-repeat;margin:0 auto}
-.quick5{width:440px;height:620px;position:absolute;left:calc(50% - 220px);top:calc(50% - 310px);transform:translate(-50%,-50%);display:none;border-radius:6px;overflow:hidden;background:#fff}
+.quick5{width:440px;height:620px;position:absolute;left:calc(50% - 220px);top:calc(50% - 310px);display:none;border-radius:6px;overflow:hidden;background:#fff}
 .quick5>.q_head{width:440px;height:200px;background:url(../img/tj_tit.png);position:relative}
 .quick5>.q_head>span{width:24px;height:24px;background:url(../img/ic.png);position:absolute;left:18px;top:18px;cursor:pointer}
 .quick5>input{width:90%;height:auto;margin:50px 20px;border:1px solid #ff5050;height:58px;line-height:58px;font-size:18px;color:#333;padding-left:135px;box-sizing:border-box}
@@ -71,7 +71,7 @@ div.video{width: 380px;height:380px;margin:50px auto;overflow: hidden;background
 .quick5>.no{color:#ff5050;font-size:14px;text-align:center;margin-bottom:5px;display:none;}
 .quick5>.notice{width:204px;height:40px;overflow:hidden;line-height:20px;color:#999;font-size:16px;text-align:center;margin:0 auto 65px}
 .quick5>.l3{width:400px;height:56px;background:url(../img/l3.png);margin:0 auto}
-.quick6{width:440px;height:600px;position:absolute;left:calc(50% - 220px);top:calc(50% - 310px);transform:translate(-50%,-50%);display:none;border-radius:6px;overflow:hidden;background:#fff}
+.quick6{width:440px;height:600px;position:absolute;left:calc(50% - 220px);top:calc(50% - 310px);display:none;border-radius:6px;overflow:hidden;background:#fff}
 .quick6>.q_head{width:440px;height:200px;background:url(../img/tj.png);position:relative}
 .quick6>.sub{color:#ff5050;font-size:18px;width:100%;text-align:center;margin:50px auto}
 .quick6>.notice{color:#999;font-size:16px;width:100%;text-align:center}
@@ -545,8 +545,8 @@ div.com{width:895px;float:left}
 .album_box .photo_small .pic_small_image_box{height:65px;}
 .album_box .photo_small .pic_small_image_box img{height:65px;float:left;margin-left:10px;cursor:pointer;}
 /*liuyanban*/
-.liuyan_box{width: 100%;height: 100%;background-color: rgba(0,0,0,0.6);position: absolute;left: 0;top: 0;overflow: hidden;display: none}
-.liuyan{width:800px;margin:25% auto;overflow: hidden;background-color: #fff;}
+.liuyan_box{width: 100%;height: 100%;background-color: rgba(0,0,0,0.6);position: fixed;left: 0;top: 0;overflow: hidden;display: none;z-index: 99999}
+.liuyan{width:800px;margin:15% auto;overflow: hidden;background-color: #fff;}
 .liuyan span{height:25px;line-height:25px;margin:10px;color:#ff6800;font-size: 18px;display:inline-block}
 .liuyan div.close{width: 20px;height: 20px;background:url(../img/close.gif) no-repeat;display: inline-block;background-size: 20px 20px;float: right;margin:10px 10px 0 0;}
 .liuyan .text{width:750px;height:180px;margin:10px auto;resize:none;display: block;}

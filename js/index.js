@@ -7,9 +7,10 @@ $(function(){
 		$('.top').click(function(){
 			//scrollTop兼容性
 			var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
-			$(document.documentElement).stop().animate({
+			$(document).stop().animate({
 		        'scrollTop':0,
 	    	},1000)
+	    	$(document).scrollTop(0);
 		})
 //flip
 	$('.foot_ban').click(function(){

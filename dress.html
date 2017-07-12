@@ -236,59 +236,57 @@
 				    type:'GET',
 				    async:true,
 				    dataType:'json',
-				    success:function(data,textStatus,jqXHR){
-				        console.log(data);
-				        var $Ul=$(".itemlist");
-				        var str='';
-				        for(var i=0;i<data.length;i++){
-				        	switch(selectdata){
-				        		case data[i].any :
-				        			showdata();
-				        			break;
-				        		case data[i].address :
-				        			showdata();
-				        			break;
-				        		case data[i].kinds :
-				        			showdata();
-				        			break;
-				        		case data[i].prices :
-				        			showdata();
-				        			break;
-				        		case '' :
-				        			showdata();
+			        success:function(data,textStatus,jqXHR){
+			            console.log(data);
+			            var $Ul=$(".itemlist");
+			            var str='';
+			            for(var i=0;i<data.length;i++){
+			            	switch(selectdata){
+			            		case data[i].any :
+			            			showdata();
+			            			break;
+			            		case data[i].address :
+			            			showdata();
+			            			break;
+			            		case data[i].kinds :
+			            			showdata();
+			            			break;
+			            		case data[i].prices :
+			            			showdata();
+			            			break;
+			            		case '' :
+			            			showdata();
 
-				        	}
-				        	function showdata(){
-				        		str+='<li>\
-				        			<div class="i">\
-				        				<a href="shop.html" target="_blank">\
-				        					<img alt="巴黎婚纱3999元婚纱照" src='+data[i].content.url+'>\
-				        				</a>\
-				        				<p class="i_txt">'+data[i].content.title+
-				        					'<span class="tg_tj"></span>\
-										</p>\
-										<p class="i_txt02">'+data[i].content.price+'</p>\
-										<p class="i_txt03"><del>'+data[i].content.sPrice+'</del></p>\
-										<p class="i_txt04">'+data[i].content.sell+'</p>\
-									<div class="i_show">\
-											<a target="_blank" href="#">\
-												<p class="i_show_p1">\
-													<span class="biao_v">'+data[i].content.shop+'</span>\
-												</p>\
-											</a>\
-											<p class="i_show_p2">'+data[i].content.showAddress+'</p>\
-										</div>\
-									</div>\
-								</li>'
-				        	}
-				        	
-				        }
-				        $(".itemlist").html(str);
-				    },
-				    error:function(xhr,textStatus){
+			            	}
+			            	function showdata(){
+			            		str+='<li>\
+			            			<div class="i">\
+			            				<a href="shop.html" target="_blank">\
+			            					<img alt="巴黎婚纱3999元婚纱照" src='+data[i].content.url+'>\
+			            				</a>\
+			            				<p class="i_txt">'+data[i].content.title+
+			            					'<span class="tg_tj"></span>\
+			    						</p>\
+			    						<p class="i_txt02">'+data[i].content.price+'</p>\
+			    						<p class="i_txt03"><del>'+data[i].content.sPrice+'</del></p>\
+			    						<p class="i_txt04">'+data[i].content.sell+'</p>\
+			    					<div class="i_show">\
+			    							<a target="_blank" href="#">\
+			    								<p class="i_show_p1">\
+			    									<span class="biao_v">'+data[i].content.shop+'</span>\
+			    								</p>\
+			    							</a>\
+			    							<p class="i_show_p2">'+data[i].content.showAddress+'</p>\
+			    						</div>\
+			    					</div>\
+			    				</li>'
+			            	}
+			            	
+			            }
+			            $(".itemlist").html(str);
+			        },
+			        error:function(xhr,textStatus){
 				        console.log('错误')
-				        console.log(xhr)
-				        console.log(textStatus)
 				    },
 				    complete:function(){
 				        console.log('结束')
